@@ -1,1 +1,1 @@
-# halo-blocks-privacy
+# lumen-peak-games-privacy-policy
