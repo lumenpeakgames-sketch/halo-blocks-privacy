@@ -1,463 +1,483 @@
-<!DOCTYPE html>
+<!doctype html>
+<!--
+  Lumen Peak Games – universal privacy policy (all games + website).
+  URL: https://lumenpeakgames-sketch.github.io/privacy/
+
+  ADDING A NEW GAME: copy the <article class="game"> block in section 2,
+  fill it in, and update "Last updated" below the title.
+-->
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Lumen Peak Games</title>
-<meta name="description" content="Privacy Policy for all mobile games published by Lumen Peak Games, including Halo Blocks, Duckdoku, Capy Days, Crash Circuit and Capy Wheels.">
-<meta name="robots" content="index, follow">
-<meta name="theme-color" content="#14183a">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Privacy Policy – Lumen Peak Games">
-<meta property="og:description" content="How Lumen Peak Games and the services in our games handle your information.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2314183a'/%3E%3Cpath d='M8 50 26 22l8 12 6-8 16 24Z' fill='%236d7cff'/%3E%3Ccircle cx='44' cy='16' r='6' fill='%23ffc857'/%3E%3C/svg%3E">
-<!--
-  This page is served by GitHub Pages from the root of the main branch.
-  Keep index.html in the repository root so the public URL keeps working.
--->
+<meta name="description" content="How Lumen Peak Games collects, uses and protects data in its games and on this website.">
+<meta name="theme-color" content="#0F1A2E">
+<link rel="canonical" href="https://lumenpeakgames-sketch.github.io/privacy/">
 <style>
-:root{
-  --bg:#f6f7fb;
-  --surface:#ffffff;
-  --surface-2:#eef0f8;
-  --text:#1b1f33;
-  --muted:#5b6178;
-  --border:#dfe2ee;
-  --brand:#4f5dff;
-  --brand-ink:#3442e0;
-  --accent:#ffc857;
-  --hero-1:#14183a;
-  --hero-2:#272d6b;
-  --hero-text:#f4f5ff;
-  --hero-muted:#c3c7ef;
-  --radius:14px;
-  --shadow:0 1px 2px rgba(20,24,58,.05),0 8px 24px rgba(20,24,58,.06);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --bg:#0e1124;
-    --surface:#161a33;
-    --surface-2:#1d2242;
-    --text:#e8eaf7;
-    --muted:#a2a7c6;
-    --border:#2a3058;
-    --brand:#8b96ff;
-    --brand-ink:#a9b1ff;
-    --hero-1:#0a0d1f;
-    --hero-2:#1b2152;
-    --shadow:none;
+  :root {
+    --bg: #0F1A2E;
+    --bg-raised: #15233C;
+    --rule: #2A3F63;
+    --ink: #E2E8F2;
+    --ink-soft: #A7B4CA;
+    --link: #84B6FF;
+    --link-hover: #B6D2FF;
+    --gold: #D6B46A;
+    --serif: "Iowan Old Style", "Palatino Linotype", Palatino, "Book Antiqua", "URW Palladio L", P052, Georgia, serif;
+    --sans: Seravek, "Gill Sans Nova", Ubuntu, Calibri, "DejaVu Sans", source-sans-pro, sans-serif;
+    --measure: 38rem;
+    color-scheme: dark;
   }
-}
-:root[data-theme="dark"]{
-  --bg:#0e1124;--surface:#161a33;--surface-2:#1d2242;--text:#e8eaf7;--muted:#a2a7c6;
-  --border:#2a3058;--brand:#8b96ff;--brand-ink:#a9b1ff;--hero-1:#0a0d1f;--hero-2:#1b2152;--shadow:none;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--bg);color:var(--text);
-  font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  overflow-wrap:break-word;
-}
-a{color:var(--brand-ink);text-underline-offset:2px}
-a:hover{color:var(--brand)}
-:focus-visible{outline:3px solid var(--brand);outline-offset:2px;border-radius:4px}
-.skip{position:absolute;left:-9999px;top:8px;background:var(--surface);padding:8px 14px;border-radius:8px;z-index:10}
-.skip:focus{left:16px}
 
-/* Header */
-.hero{
-  background:radial-gradient(1200px 400px at 85% -10%,rgba(255,200,87,.18),transparent 60%),
-             linear-gradient(135deg,var(--hero-1),var(--hero-2));
-  color:var(--hero-text);
-}
-.wrap{max-width:1160px;margin:0 auto;padding:0 16px}
-@media (min-width:640px){.wrap{padding:0 28px}}
-.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 0}
-.brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;font-weight:700;letter-spacing:.2px;font-size:1.05rem}
-.brand svg{width:38px;height:38px;flex:none}
-.brand:hover{color:inherit}
-.contact-link{color:var(--hero-muted);text-decoration:none;font-size:.92rem;border:1px solid rgba(255,255,255,.18);padding:6px 14px;border-radius:999px;white-space:nowrap}
-.contact-link:hover{color:#fff;border-color:rgba(255,255,255,.4)}
-.hero-body{padding:36px 0 44px}
-@media (min-width:640px){.hero-body{padding:56px 0 64px}}
-.eyebrow{text-transform:uppercase;letter-spacing:.14em;font-size:.78rem;color:var(--accent);font-weight:700;margin:0 0 10px}
-.hero h1{font-size:clamp(2rem,5vw,3rem);line-height:1.15;margin:0 0 14px;letter-spacing:-.01em}
-.hero p.lead{color:var(--hero-muted);max-width:680px;margin:0 0 22px;font-size:1.06rem}
-.dates{display:flex;flex-wrap:wrap;gap:8px 20px;color:var(--hero-muted);font-size:.9rem;margin-bottom:24px}
-.dates strong{color:var(--hero-text);font-weight:600}
-.games{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
-.games li{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);padding:5px 14px;border-radius:999px;font-size:.9rem}
+  *, *::before, *::after { box-sizing: border-box; }
 
-/* Layout */
-.layout{display:grid;gap:28px;padding-top:32px;padding-bottom:56px}
-@media (min-width:960px){.layout{grid-template-columns:260px minmax(0,1fr);gap:44px;padding-top:44px}}
-.toc{align-self:start}
-@media (min-width:960px){.toc{position:sticky;top:20px;max-height:calc(100vh - 40px);overflow:auto}}
-.toc details{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:4px 16px}
-.toc summary{cursor:pointer;font-weight:700;padding:10px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}
-.toc summary::-webkit-details-marker{display:none}
-.toc summary::after{content:"+";font-weight:400;font-size:1.3rem;color:var(--muted)}
-.toc details[open] summary::after{content:"–"}
-.toc ol{margin:0 0 12px;padding:0;list-style:none;counter-reset:t}
-.toc li{counter-increment:t}
-.toc a{display:flex;gap:10px;padding:6px 8px;border-radius:8px;text-decoration:none;color:var(--muted);font-size:.92rem;line-height:1.4}
-.toc a::before{content:counter(t);min-width:1.4em;color:var(--brand);font-weight:600;font-variant-numeric:tabular-nums}
-.toc a:hover{background:var(--surface-2);color:var(--text)}
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* Content */
-main{min-width:0}
-.summary{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px;margin-bottom:28px}
-@media (min-width:640px){.summary{padding:26px 30px}}
-.summary h2{margin:0 0 14px;font-size:1.15rem}
-.summary ul{margin:0;padding:0;list-style:none;display:grid;gap:12px}
-@media (min-width:720px){.summary ul{grid-template-columns:1fr 1fr}}
-.summary li{position:relative;padding-left:28px;line-height:1.5}
-.summary li::before{content:"";position:absolute;left:0;top:.3em;width:16px;height:16px;border-radius:50%;
-  background:var(--brand) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4.5 8.2 2.2 2.2 4.8-4.8' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/contain no-repeat}
-section{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:22px;margin-bottom:16px;scroll-margin-top:20px}
-@media (min-width:640px){section{padding:28px 32px}}
-section h2{margin:0 0 12px;font-size:1.3rem;line-height:1.3;display:flex;gap:12px;align-items:baseline}
-section h2 .n{color:var(--brand);font-variant-numeric:tabular-nums;font-size:1rem;font-weight:700;min-width:1.6em}
-section h3{font-size:1.02rem;margin:22px 0 6px}
-section p{margin:0 0 12px}
-section ul{margin:0 0 12px;padding-left:22px}
-section li{margin-bottom:6px}
-section > :last-child{margin-bottom:0}
-.note{background:var(--surface-2);border-left:4px solid var(--brand);padding:12px 16px;border-radius:0 10px 10px 0;margin:14px 0}
-.links{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.95rem}
-.table-wrap{overflow-x:auto;margin:14px 0;border:1px solid var(--border);border-radius:10px}
-table{width:100%;border-collapse:collapse;font-size:.94rem;min-width:560px}
-th,td{padding:11px 14px;text-align:left;vertical-align:top;border-bottom:1px solid var(--border)}
-tbody tr:last-child td{border-bottom:0}
-th{background:var(--surface-2);font-weight:600}
-td:first-child{font-weight:600;white-space:nowrap}
-.contact-card{display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between;background:var(--surface-2);border-radius:12px;padding:18px 20px;margin-top:8px}
-.contact-card strong{display:block;font-size:1.05rem}
-.btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;padding:10px 18px;border-radius:999px}
-.btn:hover{color:#fff;filter:brightness(1.08)}
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
 
-footer{border-top:1px solid var(--border);color:var(--muted);font-size:.9rem;padding:24px 0 40px}
-footer .wrap{display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between}
+  .wrap { max-width: var(--measure); margin: 0 auto; padding: 0 1.25rem; }
 
-@media print{
-  .hero{background:none;color:#000}
-  .hero p.lead,.dates,.dates strong{color:#000}
-  .toc,.contact-link,.skip{display:none}
-  .layout{display:block}
-  section,.summary{border:0;box-shadow:none;padding:0;margin-bottom:18px}
-  .games li{border-color:#999}
-}
+  .skip {
+    position: absolute; left: -9999px; top: 0;
+    background: var(--gold); color: var(--bg);
+    padding: .5rem .8rem; border-radius: 4px; font-weight: 700; z-index: 10;
+  }
+  .skip:focus { left: 1rem; top: 1rem; }
+
+  a { color: var(--link); text-decoration-thickness: 1px; text-underline-offset: .18em; }
+  a:hover { color: var(--link-hover); }
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; border-radius: 2px; }
+
+  /* Header */
+  .site-header {
+    display: flex; justify-content: space-between; align-items: baseline; gap: 1rem;
+    padding: 1.25rem 0 1rem;
+    border-bottom: 1px solid var(--rule);
+  }
+  .brand {
+    font-family: var(--serif); font-size: 1.15rem; letter-spacing: .01em;
+    color: var(--ink); text-decoration: none;
+  }
+  .brand:hover { color: var(--gold); }
+  .site-header a:not(.brand) { font-size: .95rem; }
+
+  /* Hero */
+  .hero { padding-top: 3rem; }
+  h1 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: clamp(2.4rem, 7vw, 3.4rem); line-height: 1.08; letter-spacing: -.01em;
+    margin: 0 0 .9rem;
+  }
+  .lede { font-size: 1.1875rem; line-height: 1.5; margin: 0 0 .6rem; max-width: 32rem; }
+  .meta { color: var(--ink-soft); font-size: .95rem; margin: 0; }
+
+  .ridge { display: block; width: 100%; height: auto; margin: 2rem 0 2.25rem; overflow: visible; }
+
+  /* Headings & text */
+  h2 {
+    font-family: var(--serif); font-weight: 600;
+    font-size: 1.5rem; line-height: 1.25;
+    margin: 3.25rem 0 .8rem;
+    scroll-margin-top: 1.5rem;
+  }
+  h3 { font-size: 1.0625rem; font-weight: 700; line-height: 1.35; margin: 1.75rem 0 .4rem; }
+  p, ul, ol, dl, address { margin: 0 0 1rem; }
+  ul, ol { padding-left: 1.3rem; }
+  li { margin: .4rem 0; }
+  li::marker { color: var(--ink-soft); }
+  strong { font-weight: 700; color: var(--ink); }
+
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .86em; padding: .1em .35em; border-radius: 3px;
+    background: rgba(132, 182, 255, .09); word-break: break-all;
+  }
+
+  /* Summary */
+  .summary {
+    background: var(--bg-raised);
+    border: 1px solid var(--rule); border-top: 2px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.25rem 1.25rem .4rem;
+    margin-bottom: 1.75rem;
+  }
+  .summary h2 { margin: 0 0 .5rem; font-size: 1.25rem; }
+
+  /* Contents */
+  .toc details { border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule); padding: .8rem 0; }
+  .toc summary { cursor: pointer; font-weight: 700; }
+  .toc ol { columns: 2 15rem; column-gap: 2.5rem; margin: .9rem 0 .3rem; }
+  .toc li { break-inside: avoid; margin: 0; padding: .2rem 0; }
+
+  /* Controller box */
+  address {
+    font-style: normal;
+    background: var(--bg-raised); border: 1px solid var(--rule); border-radius: 6px;
+    padding: 1rem 1.25rem;
+  }
+  mark.fill {
+    background: rgba(214, 180, 106, .14); color: var(--gold);
+    outline: 1px dashed var(--gold); outline-offset: 2px;
+    padding: 0 .2em; border-radius: 2px;
+  }
+
+  /* Games */
+  .game { border: 1px solid var(--rule); border-radius: 6px; padding: 1.1rem 1.25rem .3rem; margin: 1.25rem 0; }
+  .game h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 600; margin: 0 0 .8rem; }
+  .game dl > div { display: grid; gap: .1rem; margin-bottom: .8rem; }
+  .game dt { color: var(--ink-soft); font-size: .95rem; }
+  .game dd { margin: 0; }
+  @media (min-width: 36rem) {
+    .game dl > div { grid-template-columns: 9.5rem 1fr; gap: 1rem; align-items: baseline; }
+  }
+
+  /* Legal bases */
+  .bases > div { margin-bottom: 1.1rem; }
+  .bases dt { font-weight: 700; }
+  .bases dd { margin: .15rem 0 0; }
+
+  /* Services */
+  .service { border-top: 1px solid var(--rule); padding-top: 1.1rem; margin-top: 1.25rem; }
+  .service h3 { margin: 0 0 .1rem; }
+  .provider { color: var(--ink-soft); font-size: .95rem; margin-bottom: .5rem; }
+
+  /* Footer */
+  .site-footer {
+    display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem;
+    border-top: 1px solid var(--rule);
+    margin-top: 4rem; padding: 1.5rem 0 3rem;
+    color: var(--ink-soft); font-size: .95rem;
+  }
+  .site-footer p { margin: 0; }
+
+  @media print {
+    :root { --bg: #fff; --bg-raised: #fff; --ink: #000; --ink-soft: #333; --link: #000; --rule: #aaa; }
+    body { font-size: 11pt; }
+    .ridge, .toc, .skip, .site-footer a { display: none; }
+    h2 { break-after: avoid; }
+  }
 </style>
 </head>
-<body>
+<body id="top">
 <a class="skip" href="#content">Skip to content</a>
 
-<header class="hero">
-  <div class="wrap">
-    <div class="topbar">
-      <a class="brand" href="./" aria-label="Lumen Peak Games – Privacy Policy">
-        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="rgba(255,255,255,.08)"/><path d="M8 50 26 22l8 12 6-8 16 24Z" fill="#6d7cff"/><path d="M26 22l8 12-4 6-8-8Z" fill="#9aa4ff"/><circle cx="44" cy="16" r="6" fill="#ffc857"/></svg>
-        <span>Lumen Peak Games</span>
-      </a>
-      <a class="contact-link" href="#contact">Contact</a>
-    </div>
-    <div class="hero-body">
-      <p class="eyebrow">Legal</p>
-      <h1>Privacy Policy</h1>
-      <p class="lead">This policy explains what information our mobile games handle and how they handle it. It applies to every game published by Lumen Peak Games that links to this page, including the games below and any games we release in the future.</p>
-      <div class="dates">
-        <span>Effective date: <strong>October 7, 2026</strong></span>
-        <span>Last updated: <strong>October 7, 2026</strong></span>
-      </div>
-      <ul class="games" aria-label="Games covered by this policy">
-        <li>Halo Blocks</li>
-        <li>Duckdoku</li>
-        <li>Capy Days</li>
-        <li>Crash Circuit</li>
-        <li>Capy Wheels</li>
-      </ul>
-    </div>
-  </div>
-</header>
-
-<div class="wrap layout">
-  <nav class="toc" aria-label="Table of contents">
-    <details id="toc" open>
-      <summary>Contents</summary>
-      <ol>
-        <li><a href="#scope">Who we are and scope</a></li>
-        <li><a href="#provided">Information you provide</a></li>
-        <li><a href="#device">Game data stored on your device</a></li>
-        <li><a href="#automatic">Information collected automatically</a></li>
-        <li><a href="#ads">Advertising</a></li>
-        <li><a href="#admob">Google AdMob / Google Mobile Ads</a></li>
-        <li><a href="#play">Google Play Services</a></li>
-        <li><a href="#analytics">Analytics and crash reporting</a></li>
-        <li><a href="#iap">In-app purchases</a></li>
-        <li><a href="#use">How we use information</a></li>
-        <li><a href="#sharing">Sharing with third parties</a></li>
-        <li><a href="#retention">Data retention and deletion</a></li>
-        <li><a href="#security">Data security</a></li>
-        <li><a href="#children">Children's privacy</a></li>
-        <li><a href="#rights">Your rights and choices</a></li>
-        <li><a href="#international">International processing</a></li>
-        <li><a href="#by-game">Services used by each game</a></li>
-        <li><a href="#changes">Changes to this policy</a></li>
-        <li><a href="#contact">Contact us</a></li>
-      </ol>
-    </details>
-  </nav>
+<div class="wrap">
+  <header class="site-header">
+    <a class="brand" href="/">Lumen Peak Games</a>
+    <a href="mailto:lumenpeakgames@gmail.com">Contact</a>
+  </header>
 
   <main id="content">
-    <div class="summary">
-      <h2>At a glance</h2>
-      <ul>
-        <li>You don't need a Lumen Peak Games account to play our games.</li>
-        <li>We don't ask for your name, address, phone number, contacts, photos or precise location.</li>
-        <li>Game progress and settings are stored on your device.</li>
-        <li>Some games show ads through Google AdMob, and some offer optional purchases through Google Play.</li>
-        <li>We do not sell your personal information.</li>
-        <li>You can contact us at any time with a privacy question or request.</li>
-      </ul>
+    <div class="hero">
+      <h1>Privacy Policy</h1>
+      <p class="lede">How Lumen Peak Games handles your data in all of its games and on this website.</p>
+      <p class="meta">Last updated: 7 October 2026</p>
     </div>
 
-    <section id="scope">
-      <h2><span class="n">1</span>Who we are and scope</h2>
-      <p>Lumen Peak Games ("we", "us" or "our") develops and publishes mobile games. This Privacy Policy applies to every game published by Lumen Peak Games that links to this page (each a "Game", together the "Games"). This currently includes <strong>Halo Blocks</strong>, <strong>Duckdoku</strong>, <strong>Capy Days</strong>, <strong>Crash Circuit</strong> and <strong>Capy Wheels</strong>, and it will also apply to future Lumen Peak Games titles that link to this page.</p>
-      <p>Our Games don't all use the same features. When a section below only applies to some Games, it says so. <a href="#by-game">Section 17</a> lists the third-party services each Game uses.</p>
-    </section>
+    <svg class="ridge" viewBox="0 0 640 60" aria-hidden="true" focusable="false">
+      <path d="M0 58 L90 50 L150 54 L214 43 L262 47 L318 34 L362 38 L424 29 L470 35 L522 27 L584 40 L640 46"
+            fill="none" stroke="#22365A" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <path d="M0 56 L64 52 L118 46 L170 49 L232 37 L276 41 L336 23 L372 28 L408 11 L446 25 L488 21 L540 38 L590 44 L640 50"
+            fill="none" stroke="#3A5584" stroke-width="1.5" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+      <circle cx="408" cy="9" r="11" fill="#D6B46A" opacity=".14"/>
+      <circle cx="408" cy="9" r="3.5" fill="#D6B46A"/>
+    </svg>
 
-    <section id="provided">
-      <h2><span class="n">2</span>Information you provide</h2>
-      <p>Our Games do not require you to create a Lumen Peak Games account, and they don't ask you to enter personal information such as your name, email address, postal address, phone number, contacts, photos or precise GPS location.</p>
-      <p>If you contact us by email, we receive your email address and whatever you choose to include in your message. We use it only to answer you and to deal with your request.</p>
-    </section>
-
-    <section id="device">
-      <h2><span class="n">3</span>Game data stored on your device</h2>
-      <p>Our Games may store gameplay information locally on your device so that they work as expected. Depending on the Game, this can include:</p>
+    <section class="summary" aria-labelledby="in-short">
+      <h2 id="in-short">In short</h2>
       <ul>
-        <li>scores, high scores, levels and other progress;</li>
-        <li>in-game currency balances and unlocked or purchased items (for example characters, skins, themes or vehicles);</li>
-        <li>game settings such as sound, music and vibration preferences;</li>
-        <li>daily rewards, challenges, missions, achievements and statistics;</li>
-        <li>records needed to keep or restore in-app purchases.</li>
-      </ul>
-      <p>We do not send this local game data to servers operated by Lumen Peak Games. It is removed when you clear the Game's app data or uninstall the Game, except for information that Google services store separately (see <a href="#play">Section 7</a>).</p>
-    </section>
-
-    <section id="automatic">
-      <h2><span class="n">4</span>Information collected automatically</h2>
-      <p>Lumen Peak Games does not run its own servers that collect information from the Games. However, third-party services built into some Games may collect certain information automatically when you play. Depending on the Game and the features you use, this may include:</p>
-      <ul>
-        <li>device and app information, such as device model, operating system version, language, app version and settings;</li>
-        <li>online identifiers, such as IP address, the Android advertising ID and app set ID;</li>
-        <li>interactions with ads, such as ad views, clicks and completed rewarded videos;</li>
-        <li>purchase information, such as purchase status and purchase tokens, when you buy something in a Game;</li>
-        <li>diagnostic information, such as crash logs and performance data.</li>
-      </ul>
-      <p>These services handle this information under their own privacy policies, described in the sections below.</p>
-    </section>
-
-    <section id="ads">
-      <h2><span class="n">5</span>Advertising</h2>
-      <p>Some of our Games are free to play and show ads to support development. Depending on the Game, these can include:</p>
-      <ul>
-        <li><strong>Rewarded ads</strong>, which you choose to watch for an in-game benefit, such as continuing a run, getting more in-game currency or doubling a reward;</li>
-        <li><strong>Interstitial ads</strong>, which are full-screen ads shown at natural breaks in gameplay.</li>
-      </ul>
-      <p>Depending on where you live, applicable law and your privacy choices, the ads you see may be personalized or non-personalized.</p>
-      <h3>Consent and privacy choices</h3>
-      <p>Games that show ads use Google's User Messaging Platform (UMP) to manage consent where the law requires it, for example in the European Economic Area, the United Kingdom and Switzerland. Where required, you will see a privacy message where you can give consent, decline it or choose which options to allow. Personalized ads are not requested unless these consent requirements are met. Where the law requires it, you can review or change your choices later from the Game's settings.</p>
-      <h3>Managing ads on your device</h3>
-      <p>On Android you can reset or delete your advertising ID under <em>Settings → Privacy → Ads</em> (menu names vary by device). You can also manage ad personalization in your <a href="https://myadcenter.google.com/" rel="noopener">Google account settings</a>.</p>
-    </section>
-
-    <section id="admob">
-      <h2><span class="n">6</span>Google AdMob / Google Mobile Ads</h2>
-      <p>Games that show ads use <strong>Google AdMob</strong> through the <strong>Google Mobile Ads SDK</strong>, provided by Google LLC. Google may automatically collect and process information such as:</p>
-      <ul>
-        <li>IP address, which may be used to estimate your general location;</li>
-        <li>the advertising ID, app set ID and other device identifiers;</li>
-        <li>interactions with ads and with the Game;</li>
-        <li>diagnostic, performance and device information.</li>
-      </ul>
-      <p>Google uses this information to show ads, measure ad performance, provide ad analytics, prevent fraud and abuse, and improve its services. To learn more, see:</p>
-      <p class="links">
-        <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>
-        <a href="https://policies.google.com/technologies/ads" rel="noopener">How Google uses information for advertising</a>
-        <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from apps that use its services</a>
-      </p>
-    </section>
-
-    <section id="play">
-      <h2><span class="n">7</span>Google Play Services</h2>
-      <p>Our Games are distributed through Google Play. Google's own privacy policy and terms apply to the Google Play Store, your Google account and the Google Play services on your device.</p>
-      <h3>Google Play Games Services</h3>
-      <p>Some Games use Google Play Games Services for features such as signing in with your Play Games profile, leaderboards and achievements. When you use these features, Google processes information linked to your Play Games profile, such as your gamer ID, player name, profile image, scores, rankings and achievements. Your player name and scores may be visible to other players on leaderboards, depending on your Play Games profile settings. You can manage this information in the Google Play Games app and in your Google account.</p>
-      <h3>Google Play Billing</h3>
-      <p>Games that offer in-app purchases use Google Play Billing. See <a href="#iap">Section 9</a>.</p>
-      <h3>Statistics from Google Play</h3>
-      <p>Google Play gives developers aggregated statistics about their apps, such as installs, ratings, and crash and performance reports (Android vitals). We use this information only to understand how our Games perform and to fix problems. It does not identify you to us.</p>
-    </section>
-
-    <section id="analytics">
-      <h2><span class="n">8</span>Analytics and crash reporting</h2>
-      <!-- TO CONFIRM: no Firebase, Unity Analytics/Cloud Diagnostics, Crashlytics or other analytics SDK in any game. -->
-      <p>We do not currently use a separate analytics or crash-reporting service (such as Firebase Analytics or Crashlytics) in our Games. We do not build profiles about you.</p>
-      <p>We use the aggregated statistics and crash reports that Google Play provides (see <a href="#play">Section 7</a>), as well as the ad reports that Google AdMob provides for Games that show ads. These reports are aggregated and do not identify individual players to us.</p>
-      <p>If we add an analytics or crash-reporting service in the future, we will update this policy before or when that change takes effect.</p>
-    </section>
-
-    <section id="iap">
-      <h2><span class="n">9</span>In-app purchases</h2>
-      <p>Some Games offer optional in-app purchases, such as in-game currency, cosmetic items, bundles or removing ads. You can play the Games without buying anything.</p>
-      <p>All payments are processed by Google Play. <strong>Lumen Peak Games never receives or stores your payment card details.</strong> Google processes information related to the transaction, such as your Google account, purchase status, purchase tokens, device information and fraud-prevention signals, under its own policies and the Google Play terms.</p>
-      <p>A Game may store purchase entitlements or transaction identifiers on your device so that it can deliver what you bought, avoid granting the same purchase twice and restore purchases. For refunds and purchase history, use Google Play.</p>
-    </section>
-
-    <section id="use">
-      <h2><span class="n">10</span>How we use information</h2>
-      <p>Information handled by our Games and the services built into them is used to:</p>
-      <ul>
-        <li>run the Games and save your progress, items and settings;</li>
-        <li>provide leaderboards and achievements where available;</li>
-        <li>process, deliver and restore in-app purchases;</li>
-        <li>show ads and provide rewarded ad features;</li>
-        <li>respect your consent and privacy choices;</li>
-        <li>keep the Games secure and prevent fraud or abuse;</li>
-        <li>find and fix bugs, crashes and performance problems;</li>
-        <li>reply to your messages and requests;</li>
-        <li>comply with legal obligations.</li>
+        <li>You can play our games without creating an account with us or giving us your name or email address.</li>
+        <li>Your game progress and settings are saved on your device.</li>
+        <li>Some games show ads from Google AdMob or offer purchases through Google Play. These services process data about your device, such as its advertising ID. Where the law requires it, we ask for your consent before ads are personalized.</li>
+        <li>We don’t sell your personal data.</li>
+        <li>Section 2 lists every game this policy covers and the services each one uses.</li>
+        <li>To get a copy of your data or have it deleted, email <a href="mailto:lumenpeakgames@gmail.com">lumenpeakgames@gmail.com</a>.</li>
       </ul>
     </section>
 
-    <section id="sharing">
-      <h2><span class="n">11</span>Sharing with third parties</h2>
-      <p><strong>We do not sell your personal information.</strong></p>
-      <!-- TO CONFIRM: no non-Google SDKs (e.g. Unity Ads, Unity Analytics, Firebase, mediation networks) in any game. -->
-      <p>Information is shared with, or collected directly by, third-party service providers only where it is needed for features of a Game. The third-party services currently used across our Games are all provided by <strong>Google LLC</strong>:</p>
+    <nav class="toc" aria-label="Contents">
+      <details>
+        <summary>Contents</summary>
+        <ol>
+          <li><a href="#who-we-are">Who we are</a></li>
+          <li><a href="#games">Games covered by this policy</a></li>
+          <li><a href="#data-we-collect">Data we collect</a></li>
+          <li><a href="#purposes">Why we use data</a></li>
+          <li><a href="#services">Third-party services</a></li>
+          <li><a href="#sharing">When data is shared</a></li>
+          <li><a href="#ads">Your choices about ads</a></li>
+          <li><a href="#transfers">Transfers outside the EEA</a></li>
+          <li><a href="#retention">How long we keep data</a></li>
+          <li><a href="#rights">Your rights</a></li>
+          <li><a href="#delete-data">Deleting your data</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#website">This website</a></li>
+          <li><a href="#changes">Changes to this policy</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </details>
+    </nav>
+
+    <section id="who-we-are" aria-labelledby="h-who">
+      <h2 id="h-who">1. Who we are</h2>
+      <p>Lumen Peak Games is an independent game studio. The data controller responsible for your personal data under the EU General Data Protection Regulation (GDPR) is:</p>
+      <address>
+        Lumen Peak Games<br>
+        Poland<br>
+        Email: <a href="mailto:lumenpeakgames@gmail.com">lumenpeakgames@gmail.com</a>
+      </address>
+      <p>In this policy, “we”, “us” and “our” mean Lumen Peak Games. We have not appointed a data protection officer, as the law does not require one for a studio of our size and activity. You can contact us about any privacy question at the email address above.</p>
+    </section>
+
+    <section id="games" aria-labelledby="h-games">
+      <h2 id="h-games">2. Games covered by this policy</h2>
+      <p>This policy applies to every game published by Lumen Peak Games on Google Play or any other platform, and to this website. The entries below show the services each game uses. We add every new game here before it is released.</p>
+
+      <article class="game" id="halo-blocks">
+        <h3>Halo Blocks</h3>
+        <dl>
+          <div><dt>Platform</dt><dd>Android, <a href="https://play.google.com/store/apps/details?id=com.lumenpeakgames.haloblocks">Google Play</a></dd></div>
+          <div><dt>Package name</dt><dd><code>com.lumenpeakgames.haloblocks</code></dd></div>
+          <div><dt>Services</dt><dd>Google AdMob with Google’s consent tool (ads), Google Play Games Services (achievements and leaderboards), Unity (game engine)</dd></div>
+          <div><dt>Saved on your device</dt><dd>Game progress, scores, settings, unlocked skins and avatars, daily challenge and reward status</dd></div>
+          <div><dt>Account with us</dt><dd>Not needed</dd></div>
+        </dl>
+      </article>
+
+      <!--
+        NEW GAME TEMPLATE – copy, uncomment and fill in:
+        <article class="game" id="game-slug">
+          <h3>Game name</h3>
+          <dl>
+            <div><dt>Platform</dt><dd>Android, <a href="https://play.google.com/store/apps/details?id=PACKAGE">Google Play</a></dd></div>
+            <div><dt>Package name</dt><dd><code>PACKAGE</code></dd></div>
+            <div><dt>Services</dt><dd>List only what the game really uses, e.g. Google AdMob with Google’s consent tool (ads), Google Play Billing (in-app purchases), Firebase Analytics (usage statistics), Firebase Crashlytics (crash reports), Cloud Firestore (online features), Unity (game engine)</dd></div>
+            <div><dt>Online features</dt><dd>Describe what other players can see, if anything</dd></div>
+            <div><dt>Saved on your device</dt><dd>Game progress, settings, …</dd></div>
+            <div><dt>Account with us</dt><dd>Not needed</dd></div>
+          </dl>
+        </article>
+      -->
+    </section>
+
+    <section id="data-we-collect" aria-labelledby="h-data">
+      <h2 id="h-data">3. Data we collect</h2>
+
+      <h3>Saved on your device</h3>
+      <p>Our games save your progress, scores, settings and unlocked items on your device. We don’t receive this data. It is deleted when you uninstall the game or clear its data, unless the game offers cloud saving (for example, through Google Play Games), in which case section 2 says so.</p>
+
+      <h3>Collected automatically by services in our games</h3>
+      <p>The services listed in section 5 collect some data automatically while you play. Depending on the game, this can include:</p>
       <ul>
-        <li>Google AdMob / Google Mobile Ads SDK (ads);</li>
-        <li>Google User Messaging Platform (consent management);</li>
-        <li>Google Play Games Services (leaderboards and achievements);</li>
-        <li>Google Play Billing (in-app purchases).</li>
+        <li>device identifiers, such as the advertising ID on Android, the app set ID and IDs that a service creates when the game is installed; on iOS, Apple’s advertising identifier (IDFA) only if you allow tracking;</li>
+        <li>device and app information, such as device model, operating system version, language, app version and network type;</li>
+        <li>your IP address, which services use, for example, to estimate your approximate location (country or city) and to detect fraud;</li>
+        <li>how you interact with the game and with ads, for example when the game is opened and which ads are shown or tapped;</li>
+        <li>crash reports and performance data.</li>
       </ul>
-      <p>We may also disclose information if the law requires it, to protect our rights or the safety of our users, or as part of a merger, acquisition or sale of assets. In that case, this policy or an equivalent one will continue to apply.</p>
-    </section>
 
-    <section id="retention">
-      <h2><span class="n">12</span>Data retention and deletion</h2>
-      <h3>Retention</h3>
-      <p>Game data stored on your device remains there until you clear the Game's app data or uninstall the Game. Lumen Peak Games does not keep a user-account database for any of the Games. We keep emails you send us only as long as needed to handle your request, and then delete them.</p>
-      <p>Third-party services such as Google keep information under their own retention policies and your account settings.</p>
-      <h3>Deletion</h3>
-      <p>Because our Games don't use Lumen Peak Games accounts, there is no account on our side to delete. You can delete your data as follows:</p>
+      <h3>Online features</h3>
+      <p>Some games have online features, such as achievements, leaderboards, cloud saves or content that other players can see. If you use them:</p>
       <ul>
-        <li><strong>Local game data:</strong> on Android, go to <em>Settings → Apps → [Game] → Storage → Clear data</em>, or uninstall the Game.</li>
-        <li><strong>Google Play Games data</strong> (leaderboards, achievements): manage or delete it in the Google Play Games app or your <a href="https://myaccount.google.com/" rel="noopener">Google account</a>.</li>
-        <li><strong>Advertising ID:</strong> reset or delete it in your device's privacy settings.</li>
-        <li><strong>Emails you sent us:</strong> email us and ask us to delete them.</li>
+        <li>if you use Google Play Games, the game receives your Play Games player ID, display name and profile picture;</li>
+        <li>your scores and results, and any content you create or leave in a shared game world, are stored online and may be visible to other players.</li>
       </ul>
+
+      <h3>Purchases</h3>
+      <p>If a game offers in-app purchases, payment is handled by Google Play or another app store. We never see your card number or billing details. We receive only what we need to deliver your purchase: an order number, the item bought, and the date and status of the purchase.</p>
+
+      <h3>When you contact us</h3>
+      <p>If you email us, we receive your email address, your message and anything you choose to include, such as screenshots or your device model.</p>
+
+      <h3>What we don’t collect</h3>
+      <p>Our games don’t ask for access to your contacts, photos, camera, microphone or precise (GPS) location, and we don’t collect special categories of data, such as health information. If a game ever needs a device permission, it will explain why before asking, and we will update this policy first.</p>
     </section>
 
-    <section id="security">
-      <h2><span class="n">13</span>Data security</h2>
-      <p>We take reasonable steps to protect information related to our Games. We keep the data we handle to a minimum. The third-party services we use encrypt data in transit and apply their own security practices. However, no method of transmitting or storing data is 100% secure, so we cannot guarantee absolute security.</p>
-    </section>
-
-    <section id="children">
-      <h2><span class="n">14</span>Children's privacy</h2>
-      <!-- TO CONFIRM: target age group of each game in Play Console and whether any game is in the Designed for Families program. -->
-      <p>The intended audience and age rating of each Game are shown on its store listing. We do not knowingly collect personal information directly from children.</p>
-      <p>If a Game is aimed at children or a mixed audience including children, we configure the services in that Game as Google Play's Families policy and applicable laws (such as COPPA and the GDPR) require. For example, ad requests are marked as directed to children, personalized ads are not shown to children, and only Google-certified ad SDKs are used.</p>
-      <p>If you are a parent or guardian and believe that your child has given us personal information, please <a href="#contact">contact us</a> and we will delete it.</p>
-    </section>
-
-    <section id="rights">
-      <h2><span class="n">15</span>Your rights and choices</h2>
-      <p>Depending on where you live, you may have the right to:</p>
-      <ul>
-        <li>access the personal information we hold about you;</li>
-        <li>have inaccurate information corrected;</li>
-        <li>have your information deleted;</li>
-        <li>object to or restrict certain processing;</li>
-        <li>withdraw consent at any time where processing is based on consent;</li>
-        <li>receive your information in a portable format;</li>
-        <li>lodge a complaint with your local data protection authority.</li>
-      </ul>
-      <h3>European Economic Area, United Kingdom and Switzerland</h3>
-      <p>Where the GDPR or UK GDPR applies, consent for personalized ads is collected through Google's User Messaging Platform, and you can withdraw or change it where the Game offers that option. Our other processing is based on our legitimate interest in running, securing and improving the Games, or on what is needed to provide the features you use.</p>
-      <h3>United States</h3>
-      <p>Residents of some U.S. states have additional rights under state privacy laws, such as the right to know, delete or correct personal information, and to opt out of targeted advertising or the "sale" or "sharing" of personal information. We do not sell personal information for money. You can limit ad personalization through your device and Google account settings, as described in <a href="#ads">Section 5</a>.</p>
-      <p>To exercise any of these rights, <a href="#contact">contact us</a>. Because much of the data is handled directly by Google, some requests are best made through Google's own privacy tools, and we will point you to them where that applies. We will not treat you differently for exercising your rights.</p>
-    </section>
-
-    <section id="international">
-      <h2><span class="n">16</span>International processing</h2>
-      <p>The third-party services used in our Games may process information in countries other than the one you live in, including the United States. These providers use safeguards required by law for such transfers, such as the European Commission's Standard Contractual Clauses.</p>
-    </section>
-
-    <section id="by-game">
-      <h2><span class="n">17</span>Services used by each game</h2>
-      <p>This table shows the main third-party services each Game uses. We update it when a Game is added or its services change.</p>
-      <!-- TO CONFIRM: services for Duckdoku, Capy Days and Capy Wheels. Halo Blocks and Crash Circuit rows come from the previous policy. -->
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr><th scope="col">Game</th><th scope="col">Main third-party services</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>Halo Blocks</td><td>Google AdMob / Google Mobile Ads, Google User Messaging Platform, Google Play Games Services</td></tr>
-            <tr><td>Duckdoku</td><td>Services described in this policy that apply to the Game; see its Google Play Data safety section</td></tr>
-            <tr><td>Capy Days</td><td>Services described in this policy that apply to the Game; see its Google Play Data safety section</td></tr>
-            <tr><td>Crash Circuit</td><td>Google AdMob / Google Mobile Ads, Google User Messaging Platform, Google Play Billing (in-app purchases)</td></tr>
-            <tr><td>Capy Wheels</td><td>Services described in this policy that apply to the Game; see its Google Play Data safety section</td></tr>
-          </tbody>
-        </table>
-      </div>
-      <p>The Data safety section of each Game's Google Play listing also describes what data that Game handles.</p>
-    </section>
-
-    <section id="changes">
-      <h2><span class="n">18</span>Changes to this policy</h2>
-      <p>We may update this Privacy Policy when we release new Games or features, add or remove third-party services, or when legal requirements change. The updated policy will be published at this same address, and the "Last updated" date at the top will change. If a change is significant, we will give more prominent notice where appropriate, for example in the Game.</p>
-    </section>
-
-    <section id="contact">
-      <h2><span class="n">19</span>Contact us</h2>
-      <p>If you have questions, requests or concerns about this Privacy Policy or how any Lumen Peak Games title handles your information, contact us. Please mention which Game your message is about.</p>
-      <div class="contact-card">
+    <section id="purposes" aria-labelledby="h-purposes">
+      <h2 id="h-purposes">4. Why we use data</h2>
+      <p>The GDPR requires a legal basis for every use of personal data. These are our purposes and the legal basis for each.</p>
+      <dl class="bases">
         <div>
-          <strong>Lumen Peak Games</strong>
-          <a href="mailto:lumenpeakgames@gmail.com">lumenpeakgames@gmail.com</a>
+          <dt>Running the game and the features you choose to use</dt>
+          <dd>Saving progress, online features and delivering purchases. Legal basis: performance of a contract with you (Article 6(1)(b) GDPR).</dd>
         </div>
-        <a class="btn" href="mailto:lumenpeakgames@gmail.com?subject=Privacy%20request">Email us</a>
+        <div>
+          <dt>Showing personalized ads</dt>
+          <dd>Legal basis: your consent (Article 6(1)(a)). You can withdraw it at any time, as described in section 7.</dd>
+        </div>
+        <div>
+          <dt>Showing non-personalized ads, measuring ad performance and preventing ad fraud</dt>
+          <dd>Legal basis: our legitimate interest in funding free games and keeping advertising honest (Article 6(1)(f)). Where the law requires consent to store or read information on your device, we ask for it first.</dd>
+        </div>
+        <div>
+          <dt>Analytics and crash reports, in games that use them</dt>
+          <dd>Understanding how our games are played and fixing errors. Legal basis: our legitimate interest in improving our games (Article 6(1)(f)), or your consent where the law requires it.</dd>
+        </div>
+        <div>
+          <dt>Answering your messages and privacy requests</dt>
+          <dd>Legal basis: our legitimate interest in helping players (Article 6(1)(f)) and, for privacy requests, our legal obligation (Article 6(1)(c)).</dd>
+        </div>
+        <div>
+          <dt>Meeting legal obligations</dt>
+          <dd>For example, keeping purchase records for tax purposes. Legal basis: legal obligation (Article 6(1)(c)).</dd>
+        </div>
+        <div>
+          <dt>Establishing, exercising or defending legal claims</dt>
+          <dd>Legal basis: our legitimate interest (Article 6(1)(f)).</dd>
+        </div>
+      </dl>
+      <p>We don’t make decisions about you based solely on automated processing that have legal or similarly significant effects. Advertising partners may build a profile of your interests to personalize ads; where the law requires it, this happens only with your consent.</p>
+    </section>
+
+    <section id="services" aria-labelledby="h-services">
+      <h2 id="h-services">5. Third-party services</h2>
+      <p>Our games use the following services. Section 2 shows which game uses which. Each provider handles data according to its own privacy policy.</p>
+
+      <div class="service">
+        <h3>Google AdMob</h3>
+        <p class="provider">Provided by Google</p>
+        <p>Shows ads, measures their performance, limits how often you see the same ad and prevents fraud. Includes Google’s consent tool (User Messaging Platform), which asks for your choices and stores them on your device. May process the advertising ID, app set ID, IP address, device information, ad interactions and diagnostic data.</p>
+        <p><a href="https://policies.google.com/technologies/partner-sites">How Google uses data from apps that use its services</a></p>
       </div>
+
+      <div class="service">
+        <h3>Google Play Games Services</h3>
+        <p class="provider">Provided by Google</p>
+        <p>Achievements, leaderboards and cloud saves. Uses your Google Play Games profile (player ID, display name, profile picture) and the game data you submit, such as scores. Your Play Games settings control who can see your profile and activity.</p>
+        <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+      </div>
+
+      <div class="service">
+        <h3>Google Play Billing</h3>
+        <p class="provider">Provided by Google</p>
+        <p>In-app purchases. Google processes your payment; we receive only the purchase details described in section 3.</p>
+        <p><a href="https://policies.google.com/privacy">Google Privacy Policy</a></p>
+      </div>
+
+      <div class="service">
+        <h3>Firebase</h3>
+        <p class="provider">Provided by Google</p>
+        <p>Services such as Analytics, Crashlytics, Remote Config and Cloud Firestore, used only in games that list them in section 2. Depending on the service, this may involve app instance and installation IDs, device information, IP address, in-game events, crash reports and data from online features. For most of these services, Google processes data on our behalf as our data processor.</p>
+        <p><a href="https://firebase.google.com/support/privacy">Privacy and security in Firebase</a></p>
+      </div>
+
+      <div class="service">
+        <h3>Unity</h3>
+        <p class="provider">Provided by Unity Technologies</p>
+        <p>The game engine used to build our games. Unity may receive limited technical information about your device, such as its model and operating system. If a game uses Unity services such as Unity Ads or Unity Analytics, section 2 lists them, and Unity may process more data as described in its policy.</p>
+        <p><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity Game Player and App User Privacy Policy</a></p>
+      </div>
+    </section>
+
+    <section id="sharing" aria-labelledby="h-sharing">
+      <h2 id="h-sharing">6. When data is shared</h2>
+      <p>We don’t sell your personal data. Data is shared only in these cases:</p>
+      <ul>
+        <li><strong>Service providers</strong> that process data on our behalf, under contracts that require them to protect it and use it only on our instructions.</li>
+        <li><strong>Independent partners</strong> such as Google (advertising, Google Play, Google Play Games) and Unity, which also use data for their own purposes as described in their privacy policies. When ads are personalized, advertising partners use device identifiers in ways that some laws, such as certain U.S. state laws, treat as “sharing” or “targeted advertising”. You can opt out at any time, as described in section 7.</li>
+        <li><strong>Other players</strong>, who can see your display name, scores and shared content when you use online features.</li>
+        <li><strong>Authorities</strong>, when the law requires it, or to protect the rights, safety and property of players, us or others.</li>
+        <li><strong>A new owner</strong>, if a game or the studio is transferred. The new owner must keep protecting your data as described here or tell you about any changes.</li>
+      </ul>
+    </section>
+
+    <section id="ads" aria-labelledby="h-ads">
+      <h2 id="h-ads">7. Your choices about ads</h2>
+      <ul>
+        <li><strong>Consent dialog.</strong> If you are in the European Economic Area, the United Kingdom or Switzerland, the game asks for your consent before personalized ads are shown. You can change your choice at any time with the privacy option in the game’s settings.</li>
+        <li><strong>Advertising ID on Android.</strong> In your device’s Settings, usually under Google › Ads or Privacy › Ads, you can reset or delete your advertising ID. Once it is deleted, apps can no longer use it to personalize ads.</li>
+        <li><strong>Tracking on iOS.</strong> Under Settings › Privacy &amp; Security › Tracking, you can allow or deny tracking for each app.</li>
+      </ul>
+      <p>Opting out of personalized ads doesn’t remove ads from free games. The ads you see will simply be less related to your interests.</p>
+    </section>
+
+    <section id="transfers" aria-labelledby="h-transfers">
+      <h2 id="h-transfers">8. Transfers outside the EEA</h2>
+      <p>Some providers, such as Google, Unity and GitHub, process data in the United States and other countries outside the European Economic Area. These transfers rely on the EU–U.S. Data Privacy Framework where the provider is certified under it, on standard contractual clauses approved by the European Commission, or on other safeguards allowed by the GDPR. You can ask us for details.</p>
+    </section>
+
+    <section id="retention" aria-labelledby="h-retention">
+      <h2 id="h-retention">9. How long we keep data</h2>
+      <ul>
+        <li><strong>Data on your device:</strong> until you delete the game or its data.</li>
+        <li><strong>Analytics data</strong> linked to an app or device identifier, in games that use analytics: no longer than 14 months. After that, only aggregated statistics remain.</li>
+        <li><strong>Crash reports:</strong> deleted automatically after the provider’s standard retention period.</li>
+        <li><strong>Scores and shared content from online features:</strong> as long as the feature exists, or until you ask us to delete them. Your Google Play Games profile is controlled by Google and your Play Games settings.</li>
+        <li><strong>Purchase records:</strong> as long as tax and accounting law requires, usually five years from the end of the year in which the related tax was due.</li>
+        <li><strong>Emails:</strong> up to two years after your matter is resolved, unless we need them longer to establish or defend legal claims.</li>
+        <li><strong>Data held by independent partners</strong>, such as advertising data: according to their own policies, linked in section 5.</li>
+      </ul>
+    </section>
+
+    <section id="rights" aria-labelledby="h-rights">
+      <h2 id="h-rights">10. Your rights</h2>
+      <p>Under the GDPR, you have the right to:</p>
+      <ul>
+        <li>access your personal data and receive a copy of it;</li>
+        <li>have inaccurate data corrected;</li>
+        <li>have your data deleted;</li>
+        <li>restrict how we use your data;</li>
+        <li>receive data you gave us in a portable format;</li>
+        <li>object to processing based on our legitimate interests, and at any time to processing for direct marketing, including personalized advertising;</li>
+        <li>withdraw your consent at any time, without affecting processing that took place before the withdrawal;</li>
+        <li>lodge a complaint with a data protection authority, in particular in the country where you live or work. In Poland, this is the President of the Personal Data Protection Office (Prezes Urzędu Ochrony Danych Osobowych), ul. Stawki 2, 00-193 Warsaw, <a href="https://uodo.gov.pl">uodo.gov.pl</a>.</li>
+      </ul>
+      <p>Players outside the EU may have similar rights under local law, and we handle their requests in the same way.</p>
+      <p>To use your rights, email <a href="mailto:lumenpeakgames@gmail.com">lumenpeakgames@gmail.com</a>. We reply within one month; if a request is complex, we may extend this by up to two more months and will tell you why. Using your rights is free. Because you don’t have an account with us, we usually can’t link data to you by name, so please tell us which game you play and, if you use online features, your display name. We may ask for more information only to confirm that a request comes from you.</p>
+    </section>
+
+    <section id="delete-data" aria-labelledby="h-delete">
+      <h2 id="h-delete">11. Deleting your data</h2>
+      <ul>
+        <li><strong>Data on your device:</strong> uninstall the game, or go to Settings › Apps › [game name] › Storage › Clear storage. This also deletes your local progress.</li>
+        <li><strong>Advertising data:</strong> reset or delete your advertising ID, as described in section 7.</li>
+        <li><strong>Google Play Games data:</strong> in the settings of the Google Play Games app, you can delete the data of a single game or your whole Play Games profile.</li>
+        <li><strong>Anything else</strong>, such as scores and content from online features, analytics data linked to your device, or your emails: write to <a href="mailto:lumenpeakgames@gmail.com?subject=Data%20deletion%20request">lumenpeakgames@gmail.com</a> with the subject “Data deletion request” and the name of the game. We delete the data we can link to you within 30 days and confirm by email. We keep only what the law requires us to keep, such as purchase records (section 9).</li>
+      </ul>
+    </section>
+
+    <section id="children" aria-labelledby="h-children">
+      <h2 id="h-children">12. Children</h2>
+      <p>The intended age group of each game is shown on its store listing. We don’t knowingly collect personal data directly from children. If you are younger than the age at which you can consent to data processing in your country (16 in Poland and several other EU countries), please ask a parent or guardian to help with the privacy choices in the game.</p>
+      <p>If a game is directed at children, or at a mixed audience that includes children, it follows the applicable rules, including Google Play’s Families Policy and laws such as the U.S. Children’s Online Privacy Protection Act (COPPA). Among other things, this means ads shown to children are not personalized and are provided only by ad services certified for use in apps for children.</p>
+      <p>If you believe a child has given us personal data, contact us and we will delete it.</p>
+    </section>
+
+    <section id="security" aria-labelledby="h-security">
+      <h2 id="h-security">13. Security</h2>
+      <p>We collect as little data as we can and work with established providers. Data sent between our games and these services is encrypted in transit (HTTPS/TLS). Only we have access to our developer accounts and service dashboards, and we protect them with strong authentication. No system is completely secure; if a breach puts your data at risk, we will notify the data protection authority and, where required, you.</p>
+    </section>
+
+    <section id="website" aria-labelledby="h-website">
+      <h2 id="h-website">14. This website</h2>
+      <p>This website is a static site hosted on GitHub Pages. It doesn’t use cookies, analytics or advertising trackers. GitHub, Inc. logs visitors’ IP addresses for security purposes; see <a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages">GitHub’s information about GitHub Pages</a>. Links to app stores take you to sites with their own privacy policies.</p>
+    </section>
+
+    <section id="changes" aria-labelledby="h-changes">
+      <h2 id="h-changes">15. Changes to this policy</h2>
+      <p>We update this policy when our games or the services they use change, for example before a new game is released. The date at the top shows the latest version. If we make a significant change, such as collecting a new type of data, we will tell you in the game or on this website before it takes effect, and ask for your consent where the law requires it.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact">16. Contact</h2>
+      <p>Questions about this policy or your data: <a href="mailto:lumenpeakgames@gmail.com">lumenpeakgames@gmail.com</a>. Please include the name of the game you are writing about.</p>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <p>© 2026 Lumen Peak Games</p>
+    <p><a href="#top">Back to top</a></p>
+  </footer>
 </div>
-
-<footer>
-  <div class="wrap">
-    <span>© 2026 Lumen Peak Games. All rights reserved.</span>
-    <a href="#content">Back to top</a>
-  </div>
-</footer>
-
-<script>
-  // Collapse the table of contents on small screens; keep it open on desktop.
-  (function () {
-    var toc = document.getElementById('toc');
-    var mq = window.matchMedia('(min-width: 960px)');
-    function sync() { toc.open = mq.matches; }
-    sync();
-    if (mq.addEventListener) mq.addEventListener('change', sync); else mq.addListener(sync);
-    toc.addEventListener('click', function (e) {
-      if (e.target.tagName === 'A' && !mq.matches) toc.open = false;
-    });
-  })();
-</script>
 </body>
 </html>
