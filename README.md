@@ -1,7 +1,7 @@
 # Lumen Peak Games – Privacy Policy
 
 The shared Privacy Policy for all mobile games published by Lumen Peak Games
-(Halo Blocks, Duckdoku, Capy Days, Crash Circuit, Capy Wheels and future titles).
+(Halo Blocks, Duckdoku, Capy Days, Crash Circuit, Capy Wheels, Arrow Pix and future titles).
 
 Live page: https://lumenpeakgames-sketch.github.io/privacy/
 
